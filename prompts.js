@@ -24,6 +24,6 @@ module.exports = [{
 }, {
   type: 'confirm',
   name: 'fallbackToDefault',
-  message: 'Enable fallback to Default locale when key doesn\'t exist (production) ?',
+  message: 'Enable fallback in production when keys don\'t exist ?',
   default: false
 }]
