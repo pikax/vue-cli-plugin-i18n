@@ -133,7 +133,7 @@ module.exports = api => {
 
       locales.forEach(locale => {
         const additional = {}
-        additional[path] = '' // set default
+        additional[path] = null // set default
         const original = messages[locale]
         debug('original', original)
         debug('additional', additional)

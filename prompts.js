@@ -21,4 +21,9 @@ module.exports = [{
   name: 'enableInSFC',
   message: 'Enable locale messages in Single file components ?',
   default: false
+}, {
+  type: 'confirm',
+  name: 'fallbackToDefault',
+  message: 'Enable fallback to Default locale when key doesn\'t exist (production) ?',
+  default: false
 }]

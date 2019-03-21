@@ -9,7 +9,7 @@ const {
 } = require('../utils')
 
 module.exports = (api, options, rootOptions) => {
-  const { locale, fallbackLocale, localeDir, enableInSFC } = options
+  const { locale, fallbackLocale, localeDir, enableInSFC, fallbackToDefault } = options
   debug('options', options)
   debug('rootOptions', rootOptions)
 
@@ -31,7 +31,7 @@ module.exports = (api, options, rootOptions) => {
       vue: {
         pluginOptions: {
           i18n: {
-            locale, fallbackLocale, localeDir, enableInSFC
+            locale, fallbackLocale, localeDir, enableInSFC, fallbackToDefault
           }
         }
       }
